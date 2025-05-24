@@ -1,0 +1,67 @@
+@import "fonts.css";
+@import "reset.css";
+@import "global.css";
+
+@import "header.css";
+@import "footer.css";
+
+
+
+@media (max-width: 600px) {
+
+    .header__burger-logo-group {
+        gap: 15px;
+    }
+
+    .burger-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header__logo {
+        max-width: 140px;
+    }
+
+    .header__icons {
+        gap: 25px;
+    }
+
+    .header__icons svg {
+        width: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .header__burger-logo-group {
+        gap: 25px;
+    }
+
+    .burger-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .burger-icon span,
+    .burger-icon span::before,
+    .burger-icon span::after {
+        width: 20px;
+        height: 1.5px;
+    }
+
+    .burger-icon span::before {
+        top: -8px;
+    }
+
+    .burger-icon span::after {
+        bottom: -8px;
+    }
+
+    .header__logo {
+        max-width: 94px;
+    }
+
+    .header__icons svg {
+        width: 24px;
+    }
+}

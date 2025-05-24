@@ -1,0 +1,35 @@
+:root {
+    --hover-color: #c5358c;
+    --transition: all 0.5s;
+}
+
+html, body {
+    height: 100%;
+}
+
+.body {
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 1.5;
+    color: #111111;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
