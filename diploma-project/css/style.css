@@ -1,0 +1,389 @@
+@import "fonts.css";
+@import "reset.css";
+@import "global.css";
+
+@import "header.css";
+@import "footer.css";
+
+
+.main__product-card {
+    padding: 50px 0 150px 0;
+}
+
+.product-breadcrumbs {
+    margin-bottom: 110px;
+}
+
+.product-breadcrumbs span {
+    color: #ababab;
+}
+
+.product-hero {
+    display: flex;
+    gap: 135px;
+}
+
+.product-gallery {
+    display: flex;
+    gap: 25px;
+    max-height: 550px;
+    user-select: none;
+    position: relative;
+}
+
+.product-gallery-slider {
+    max-height: 551px;
+    position: relative;
+}
+
+.swiper-button-next {
+    top: 98%;
+    left: 37%;
+}
+
+.swiper-button-prev {
+    top: 2%;
+    left: 37%;
+    transform: rotate(180deg);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: '';
+}
+
+.product-gallery-pagination {
+    display: none;
+}
+
+.swiper-pagination-bullet {
+    background: var(--swiper-pagination-bullet-inactive-color, #000);
+}
+
+.swiper-button-disabled {
+    display: none;
+}
+
+
+.product-gallery-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-gallery-item {
+    width: 95px;
+    height: 95px;
+}
+
+.product-gallery-link {
+    display: flex;
+    max-width: 95px;
+    max-height: 95px;
+    opacity: 0.5;
+    transition: var(--transition);
+}
+
+.product-gallery-link img {
+    width: 100%;
+}
+
+.product-gallery-link--active {
+    box-shadow: 0px 4px 41px 0px #0000000d;
+    opacity: 1;
+}
+
+
+
+.product-gallery-active-list {}
+
+.product-gallery-active-item {
+    display: none;
+}
+
+.product-gallery-active-item img {}
+
+.img-show {
+    display: flex;
+    width: 550px;
+    height: 550px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.product-title {
+    font-family: 'NAMU Pro';
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.1;
+    max-width: 555px;
+    max-height: 126px;
+}
+
+.product-text {
+    position: absolute;
+    top: 166px;
+    max-width: 555px;
+    max-height: 142px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-text:hover {
+    max-height: 100%;
+    display: block;
+    background: white;
+    box-shadow: 0px 0px 8px 1px rgba(34, 60, 80, 0.11);
+    padding: 15px;
+    z-index: 10;
+}
+
+.product-actions {
+    position: relative;
+    top: 231px;
+    max-width: 555px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-availability {
+    margin-bottom: 22px;
+}
+
+.product-availability-in-stock {
+    display: flex;
+    align-items: center;
+    color: #68ae5c;
+    font-weight: 400;
+    line-height: 25px;
+
+}
+
+.product-availability-in-stock div {
+    border-radius: 50%;
+    margin-right: 20px;
+    background: #68ae5c;
+    width: 13px;
+    height: 13px;
+
+}
+
+.product-availability-out-of-stock {
+    display: flex;
+    align-items: center;
+    color: #dc5b5b;
+    font-weight: 400;
+    line-height: 25px;
+    display: none;
+}
+
+.product-availability-out-of-stock div {
+    border-radius: 50%;
+    margin-right: 20px;
+    background: #dc5b5b;
+    width: 13px;
+    height: 13px;
+    display: none;
+}
+
+.product-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 30px;
+}
+
+.product-original-price {
+    color: #ababab;
+    font-family: "NAMU 1850";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-decoration-line: line-through;
+}
+
+.product-discount-price {
+    font-family: "NAMU 1850";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.cart-action {
+    display: flex;
+    gap: 20px;
+}
+
+
+@media (max-width: 1500px) {
+    .product-hero {
+        gap: 40px;
+    }
+
+    .product-title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 1300px) {
+    
+}
+
+@media (max-width: 1200px) {
+    .footer__logo {
+        max-width: 140px;
+    }
+
+    .footer__text {
+        max-width: 630px;
+        font-size: 15px;
+    }
+
+    .footer__tel {
+        max-width: 140px;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .footer__tel span {
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer__inner {
+        padding: 20px 0 30px 0;
+    }
+
+    .footer__text-logo-group {
+        gap: 3px;
+    }
+
+    .footer__tel {
+        position: absolute;
+        right: 0;
+        top: 31px;
+        align-self: start;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 1440px;
+        padding: 0 70px;
+    }
+
+    /* ==================== */
+    .header__burger-logo-group {
+        gap: 15px;
+    }
+
+    .burger-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header__logo {
+        max-width: 140px;
+    }
+
+    .header__icons {
+        gap: 25px;
+    }
+
+    .header__icons svg {
+        width: 30px;
+    }
+
+    /* ==================== */
+
+    .footer__logo {
+        max-width: 110px;
+    }
+
+    .footer__text {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .footer__tel {
+        max-width: 105px;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 1340px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .footer__text {
+        max-width: 450px;
+        font-size: 10px;
+    }
+
+    .footer__tel {
+        max-width: 90px;
+        font-size: 10px;
+        top: 25px;
+        gap: 2px;
+
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .header__burger-logo-group {
+        gap: 15px;
+    }
+
+    .burger-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .burger-icon span,
+    .burger-icon span::before,
+    .burger-icon span::after {
+        width: 20px;
+        height: 1.5px;
+    }
+
+    .burger-icon span::before {
+        top: -8px;
+    }
+
+    .burger-icon span::after {
+        bottom: -8px;
+    }
+
+    .header__logo {
+        max-width: 94px;
+    }
+
+    .header__icons svg {
+        width: 24px;
+    }
+
+    /* ======================== */
+
+    .footer__text {
+        max-width: 350px;
+    }
+}
