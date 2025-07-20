@@ -18,7 +18,6 @@ body {
 
 .wrapper {
     min-height: 100%;
-    width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -31,8 +30,13 @@ body {
 .container {
     margin: 0 auto;
     height: 100%;
+    width: 100%;
     max-width: 1500px;
     padding: 0 70px;
+}
+
+.hidden {
+    display: none !important;
 }
 
 .logo {
@@ -44,12 +48,7 @@ body {
     width: 100%;
 }
 
-.favorite-btn {
-    position: absolute;
-    content: " ";
-    right: 16px;
-    top: 10px;
-}
+.favorite-btn {}
 
 .favorite-btn path {
     stroke: #111111;
@@ -57,6 +56,14 @@ body {
 
 .favorite-btn.active .heart-icon-svg {
     fill: #111111;
+}
+
+.inline-on {
+    display: inline;
+}
+
+.inline-off {
+    display: none;
 }
 
 
@@ -134,5 +141,9 @@ body {
 
 .add-to-cart:hover {
     background: var(--hover-color);
-    ;
+}
+
+.quantity {
+    font-size: 30px;
+    font-weight: 400;
 }
