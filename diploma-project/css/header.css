@@ -1,0 +1,109 @@
+.header {
+    background: #111111;
+    padding: 6px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__burger-logo-group {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    top: 69px;
+    min-width: 276px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #c5358c;
+}
+
+.show {
+    display: block;
+}
+
+.burger-icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    cursor: pointer;
+    background: #111111;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background: #fff;
+    position: relative;
+    transition: var(--transition);
+}
+
+.burger-icon:hover span,
+.burger-icon:hover span::before,
+.burger-icon:hover span::after {
+    background: var(--hover-color);
+}
+
+.burger-icon span {
+    position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+    content: '';
+    position: absolute;
+}
+
+.burger-icon span::before {
+    top: -9px;
+}
+
+.burger-icon span::after {
+    bottom: -9px;
+}
+
+
+.header__icons {
+    display: flex;
+    gap: 50px;
+    transition: var(--transition);
+}
+
+.header__icon-fav path,
+.header__icon-cart path {
+    transition: var(--transition);
+}
+
+.header__icon-fav:hover path,
+.header__icon-cart:hover path {
+    stroke: var(--hover-color);
+}
